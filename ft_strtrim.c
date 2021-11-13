@@ -6,11 +6,11 @@
 /*   By: acmaghou <muteallfocus7@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:19:22 by acmaghou          #+#    #+#             */
-/*   Updated: 2021/11/10 19:20:19 by acmaghou         ###   ########.fr       */
+/*   Updated: 2021/11/12 11:59:35 by acmaghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
+#include "libft.h"
 static int	is_set(char const *set, char const c)
 {
 	int	i;
@@ -48,14 +48,12 @@ static size_t	l_pos(char const *str, char const *set)
 char	*ft_strtrim(char const *s, char const *set)
 {
 	char	*res;
-	size_t	i;
 	size_t	len;
 	size_t	start;
 	size_t	end;
 
 	if (!s)
 		return (NULL);
-	i = 0;
 	start = f_pos(s, set);
 	end = l_pos(s, set);
 	len = (end - start) + 1;

@@ -6,13 +6,11 @@
 /*   By: acmaghou <muteallfocus7@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:10:12 by acmaghou          #+#    #+#             */
-/*   Updated: 2021/11/01 11:05:31 by acmaghou         ###   ########.fr       */
+/*   Updated: 2021/11/12 11:57:51 by acmaghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
+	return (c >= 48 && c <= 57);
 }

@@ -6,13 +6,11 @@
 /*   By: acmaghou <muteallfocus7@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:37:49 by acmaghou          #+#    #+#             */
-/*   Updated: 2021/11/08 12:10:45 by acmaghou         ###   ########.fr       */
+/*   Updated: 2021/11/11 23:20:33 by acmaghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c < 127)
-		return (1);
-	return (0);
+	return (c >= 32 && c < 127);
 }
